@@ -1,0 +1,117 @@
+/* Container utama dengan gradasi */
+.container-header {
+    background: #4D0D1E; /* Gradasi marun ke emas */
+    color: #fff; /* Warna teks putih */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georgia', serif; /* Font mewah */
+}
+
+/* Heading utama */
+.container-header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.container-header h2 {
+    font-size: 2rem;
+    font-style: italic;
+    color: #DBC2AD; /* Warna emas */
+    margin-bottom: 20px;
+}
+
+/* Paragraf undangan */
+.container-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.partner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Kontainer pasangan */
+
+/* Gaya gambar tanpa efek border-radius */
+.man img,
+.women img {
+    width: 50%; /* Ukuran gambar */
+    height: 50%;
+    border-radius: 2px;
+    border: 3px solid #DBC2AD; /* Border emas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+    margin-bottom: 10px;
+}
+
+/* Nama pasangan */
+.man h2,
+.women h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #DBC2AD; /* Warna emas */
+}
+
+/* Orang tua pasangan */
+.man p,
+.women p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #fff;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    /* Menyesuaikan padding container utama */
+    .container-header {
+        padding: 15px;
+    }
+
+    /* Menyesuaikan ukuran heading utama */
+    .container-header h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    /* Menyesuaikan ukuran subheading */
+    .container-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Menyesuaikan ukuran paragraf */
+    .container-header p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Menyesuaikan layout pasangan */
+    .man,
+    .women {
+        width: 100%; /* Lebar penuh untuk mobile */
+        margin: 10px 0;
+    }
+
+    /* Menyesuaikan ukuran gambar */
+    .man img,
+    .women img {
+        width: 50%; /* Ukuran gambar */
+        height: 50%;
+    }
+
+    /* Menyesuaikan ukuran nama pasangan */
+    .man h2,
+    .women h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Menyesuaikan ukuran paragraf orang tua pasangan */
+    .man p,
+    .women p {
+        font-size: 0.9rem;
+    }
+}
