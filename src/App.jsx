@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Hero from './components/Hero/Hero';
 import Header from './components/Header/Header';
@@ -19,7 +19,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Rute dengan parameter nama */}
+        {/* Rute utama tanpa parameter */}
+        <Route path="/" element={<Navigate to="/Guest" replace />} />
+
+        {/* Rute dengan parameter nama tamu */}
         <Route
           path="/:guestName"
           element={
