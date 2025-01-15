@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Routes>
         {/* Rute utama tanpa parameter */}
-        <Route path="/" element={<Navigate to="/Guest" replace />} />
+        <Route path="/" element={<Home/>} />
 
         {/* Rute dengan parameter nama tamu */}
         <Route
