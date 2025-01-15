@@ -1,0 +1,190 @@
+/* Main Container with Background Gradient */
+.container-time {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading */
+.headings {
+    font-size: 3rem;
+    color: #4a4a4a;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', cursive !important;
+}
+
+/* Dates */
+.times {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tanggal {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b69f77; /* Elegant Gold Color */
+}
+
+.times h4 {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+}
+
+/* Ceremony and Reception Section */
+.ceremony, .reception {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ceremony-title, .reception-title {
+    font-size: 2rem;
+    color: #b69f77;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Ceremony and Reception Details */
+.ceremony-detail, .reception-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Column Styling for Time, Date, Location */
+.ceremony-time, .reception-time,
+.ceremony-date, .reception-date,
+.ceremony-location, .reception-location {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.ceremony-time h5, .reception-time h5 {
+    font-weight: 600;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+}
+
+.ceremony-time h3, .reception-time h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b69f77;
+}
+
+.ceremony-location, .reception-location {
+    font-style: italic;
+    color: #8c8c8c;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container-time {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .headings {
+        font-size: 2.5rem;
+        font-family: 'Cinzel', cursive !important;
+
+    }
+
+    .times {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tanggal {
+        font-size: 2.5rem;
+    }
+
+    .times h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Ceremony and Reception Section */
+    .ceremony, .reception {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .ceremony-title, .reception-title {
+        font-size: 1.8rem;
+    }
+
+    /* Ceremony and Reception Details */
+    .ceremony-detail, .reception-detail {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Column Styling for Time, Date, Location */
+    .ceremony-time, .reception-time,
+    .ceremony-date, .reception-date,
+    .ceremony-location, .reception-location {
+        flex: none;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .ceremony-time h3, .reception-time h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headings {
+        font-size: 2rem;
+    }
+
+    .times {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tanggal {
+        font-size: 2rem;
+    }
+
+    .times h4 {
+        font-size: 1rem;
+    }
+
+    /* Ceremony and Reception Section */
+    .ceremony, .reception {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .ceremony-title, .reception-title {
+        font-size: 1.6rem;
+    }
+
+    /* Ceremony and Reception Details */
+    .ceremony-detail, .reception-detail {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ceremony-time, .reception-time,
+    .ceremony-date, .reception-date,
+    .ceremony-location, .reception-location {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .ceremony-time h3, .reception-time h3 {
+        font-size: 1.1rem;
+    }
+}

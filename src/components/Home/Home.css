@@ -1,105 +1,84 @@
+/* Container utama */
 .containers {
-    background-color: #4D0D1E; /* Warna marun */
-    color: #fff; /* Warna teks putih */
-    text-align: center;
-    padding: 2rem;
-}
-  
-.heading {
-    font-size: 2.5rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
-    font-family: 'Great Vibes', cursive;
-    color: #DBC2AD;
-    opacity: 0;
-    animation: slideUp 2s ease-out forwards 0.5s;
+  color: #fff; /* Warna teks putih */
+  text-align: center;
+  padding: 2rem;
+  background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.7) 90%), 
+    url('aldi-5.JPG'); /* Gambar latar belakang dengan gradient transparan */
+  background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Jangan ulangi gambar */
+  min-height: 100vh; /* Tinggi minimum agar menutupi layar penuh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-  /* Subheading */
-.subheading {
-    font-size: 2rem;
-    color: white; /* Warna emas */
-    margin-bottom: 1.5rem;
-    font-family: Cinzel;
-    letter-spacing: 10px;
-    opacity: 0;
-    animation: slideUp 2s ease-out forwards 1s;
+
+/* Heading utama */
+.heading {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  font-family: 'Great Vibes', cursive;
+  color: #DBC2AD;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards 0.5s;
 }
-  
-  /* Deskripsi */
-  .description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    font-family: Cinzel;
-    opacity: 0;
-    animation: slideUp 2s ease-out forwards 1.5s;
-  }
-  
-  /* Kontainer gambar */
-  .image-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: slideUp 2s ease-out forwards 2s;
-  }
-  
-  /* Gaya gambar dengan animasi border */
-  .image {
-    width: 50%;
-    height: 50%;
-    border: 3px solid #DBC2AD; /* Border emas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
-    border-radius: 5px;
-  }
-  
-  @keyframes slideUp {
-    0% {
+
+/* Subheading */
+.subheading {
+  font-size: 2rem;
+  color: #DBC2AD; /* Warna marun */
+  margin-bottom: 1.5rem;
+  font-family: Cinzel;
+  letter-spacing: 10px;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards 1s;
+}
+
+/* Deskripsi */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: Cinzel;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards 1.5s;
+  color: #DBC2AD;
+}
+
+/* Animasi slide */
+@keyframes slideUp {
+  0% {
       transform: translateY(20px);
       opacity: 0;
-    }
-    100% {
+  }
+  100% {
       transform: translateY(0);
       opacity: 1;
-    }
   }
-  
-  /* Responsif untuk mobile */
-  @media (max-width: 768px) {
-    /* Menyesuaikan padding container utama */
-    .containers {
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .containers {
       padding: 1.5rem;
-    }
-  
-    /* Menyesuaikan ukuran heading utama */
-    .heading {
+  }
+
+  .heading {
       font-size: 1.5rem;
       letter-spacing: 0.05rem;
-    }
-  
-    /* Menyesuaikan ukuran subheading */
-    .subheading {
-      font-size: 0.8rem;
+  }
+
+  .subheading {
+      font-size: 1rem;
       letter-spacing: 0.3rem;
-    }
-  
-    /* Menyesuaikan ukuran deskripsi */
-    .description {
+  }
+
+  .description {
       font-size: 1rem;
       margin-bottom: 1.5rem;
-    }
-  
-    /* Menyesuaikan ukuran gambar */
-    .image-container {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .image {
-      width: 100%;
-      height: auto;
-    }
   }
-  
+}

@@ -1,117 +1,99 @@
-/* Container utama dengan gradasi */
-.container-header {
-    background: #4D0D1E; /* Gradasi marun ke emas */
-    color: #fff; /* Warna teks putih */
+/* Wave SVG */
+.wave-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+  }
+
+  svg {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+  
+  /* Container utama */
+  .container-header {
+    background:  #4d0d1e ;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    font-family: 'Georgia', serif; /* Font mewah */
-}
-
-/* Heading utama */
-.container-header h1 {
-    font-size: 2.5rem;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Title utama */
+  .title-arab {
+    font-size: 1.3rem !important;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-/* Subheading */
-.container-header h2 {
-    font-size: 2rem;
-    font-style: italic;
-    color: #DBC2AD; /* Warna emas */
     margin-bottom: 20px;
-}
-
-/* Paragraf undangan */
-.container-header p {
+    color: #dbc2ad;
+  }
+  
+  /* Deskripsi */
+  .header-description {
     font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-
-.partner{
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  /* Partner Section */
+  .partner {
     display: flex;
-    justify-content: space-evenly;
-}
-
-/* Kontainer pasangan */
-
-/* Gaya gambar tanpa efek border-radius */
-.man img,
-.women img {
-    width: 50%; /* Ukuran gambar */
-    height: 50%;
-    border-radius: 2px;
-    border: 3px solid #DBC2AD; /* Border emas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
-    margin-bottom: 10px;
-}
-
-/* Nama pasangan */
-.man h2,
-.women h2 {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Partner Wrapper */
+  .man,
+  .woman {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Partner Image */
+  .partner-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #dbc2ad;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+  }
+  
+  /* Partner Name */
+  .partner-name {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 10px 0 5px;
-    color: #DBC2AD; /* Warna emas */
-}
-
-/* Orang tua pasangan */
-.man p,
-.women p {
+    margin-bottom: 5px;
+    color: #dbc2ad;
+  }
+  
+  /* Partner Parent */
+  .partner-parent {
     font-size: 1rem;
     font-style: italic;
     color: #fff;
-}
-
-/* Responsif untuk mobile */
-@media (max-width: 768px) {
-    /* Menyesuaikan padding container utama */
-    .container-header {
-        padding: 15px;
+  }
+  
+  /* Responsif untuk Mobile */
+  @media (max-width: 768px) {
+    .partner {
+      flex-direction: column;
+      align-items: center;
     }
-
-    /* Menyesuaikan ukuran heading utama */
-    .container-header h1 {
-        font-size: 2rem;
-        letter-spacing: 1px;
+  
+    .partner-img {
+      width: 120px;
+      height: 120px;
     }
-
-    /* Menyesuaikan ukuran subheading */
-    .container-header h2 {
-        font-size: 1.5rem;
+  
+    .title {
+      font-size: 2rem;
     }
-
-    /* Menyesuaikan ukuran paragraf */
-    .container-header p {
-        font-size: 1rem;
-        margin-bottom: 20px;
+  
+    .header-description {
+      font-size: 1rem;
     }
-
-    /* Menyesuaikan layout pasangan */
-    .man,
-    .women {
-        width: 100%; /* Lebar penuh untuk mobile */
-        margin: 10px 0;
-    }
-
-    /* Menyesuaikan ukuran gambar */
-    .man img,
-    .women img {
-        width: 50%; /* Ukuran gambar */
-        height: 50%;
-    }
-
-    /* Menyesuaikan ukuran nama pasangan */
-    .man h2,
-    .women h2 {
-        font-size: 1.2rem;
-    }
-
-    /* Menyesuaikan ukuran paragraf orang tua pasangan */
-    .man p,
-    .women p {
-        font-size: 0.9rem;
-    }
-}
+  }
+  
