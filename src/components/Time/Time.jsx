@@ -26,6 +26,10 @@ function Time() {
           <div className="ceremony-location">
             Jl. Angkasa Dalam 1 (Di depan Pos Rw.02) Kemayoran, Jakarta Pusat
           </div>
+          <a className="button-link" href="https://maps.app.goo.gl/zZQBDy3FDWeJ5Z7NA" target="_blank" rel="noopener noreferrer">
+  Open Maps
+</a>
+
         </div>
       </div>
 
@@ -42,6 +46,10 @@ function Time() {
           <div className="reception-location">
           Jl. Angkasa Dalam 1 (Di depan Pos Rw.02) Kemayoran, Jakarta Pusat
           </div>
+          <a className="button-link" href="https://maps.app.goo.gl/zZQBDy3FDWeJ5Z7NA" target="_blank" rel="noopener noreferrer">
+  Open Maps
+</a>
+
         </div>
       </div>
     </div>

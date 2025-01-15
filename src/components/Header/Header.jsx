@@ -19,7 +19,7 @@ function Header() {
 
       {/* Container Header */}
       <div className="container-header">
-        <h2 className="title-arab">ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h2>
+        <h2 className="title-arab">Groom & Bride</h2>
         <p className="header-description">
           Without reducing respect, please allow us to invite you, as well as
           all your relatives, to attend our wedding.

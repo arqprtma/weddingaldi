@@ -24,10 +24,13 @@
   
   /* Title utama */
   .title-arab {
-    font-size: 1.3rem !important;
+    font-size: 2rem;
+    color: #DBC2AD;
+    font-weight: 600;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #dbc2ad;
+    letter-spacing: 3px;
+    font-family: 'Cinzel', cursive !important;
   }
   
   /* Deskripsi */

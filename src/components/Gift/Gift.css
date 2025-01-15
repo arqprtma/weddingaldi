@@ -1,0 +1,108 @@
+/* Container Styling */
+.gift-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4d0d1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gift-heading {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Cinzel', cursive !important;
+  }
+  
+  .gift-description {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.8rem;
+  }
+  
+  /* Account Information */
+  .account-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bank-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .account-number {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .account-holder {
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  /* Copy Button */
+  .copy-button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Thank You Note */
+  .thank-you-note {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .gift-heading {
+      font-size: 2rem;
+    }
+  
+    .gift-description {
+      font-size: 1rem;
+    }
+  
+    .account-info {
+      padding: 10px;
+    }
+  
+    .bank-name {
+      font-size: 1.3rem;
+    }
+  
+    .account-number {
+      font-size: 1.1rem;
+    }
+  
+    .account-holder {
+      font-size: 1rem;
+    }
+  }
+  
