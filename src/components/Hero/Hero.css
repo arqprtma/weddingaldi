@@ -9,7 +9,6 @@
     align-items: center;
 }
   
-
 .hero-content {
   text-align: center;
   color: #fff;
@@ -98,7 +97,7 @@
     margin: 10px 0;
   }
   
-  .card button {
+ .open-invitation-button {
     background-color: transparent; /* Transparan agar fokus pada border emas */
     color: #DBC2AD; /* Warna teks emas */
     border: 2px solid #DBC2AD; /* Border emas */
@@ -110,7 +109,7 @@
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
   
-  .card button:hover {
+   .open-invitation-button:hover {
     background-color: #DBC2AD; /* Background berubah jadi emas */
     color: #4d0000; /* Warna teks berubah menjadi merah gelap */
     transform: scale(1.1); /* Efek membesar sedikit */
