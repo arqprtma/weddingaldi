@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Home.css';
-import sampleSong from '../../../public/songs.mp3'; // Import file lagu Anda
+import sampleSong from '../../../public/src/songs.mp3'; // Import file lagu Anda
 
 function Home() {
   const [isPlaying, setIsPlaying] = useState(true); // Default lagu dimainkan
