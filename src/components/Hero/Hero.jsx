@@ -21,7 +21,6 @@ function Hero() {
             <button>
   <i className="fas fa-arrow-down"></i> Open Invitation
 </button>
-
         </div>
       </div>
     </div>
