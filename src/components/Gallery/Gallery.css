@@ -74,6 +74,11 @@
     transform: scale(1.1);
     filter: brightness(80%);
   }
+
+  .divider {
+    width: 70px;
+    margin: 0 auto;
+  }
   
   /* Responsiveness */
   @media screen and (max-width: 768px) {

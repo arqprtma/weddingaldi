@@ -12,6 +12,7 @@ function Gallery() {
 
   return (
     <div className="gallery-container">
+    <img className='divider' src="floral.png" alt="" />
       <h2 className="gallery-heading">Our Gallery</h2>
       <div className="gallery-quote">
         <p className="arabic-text">

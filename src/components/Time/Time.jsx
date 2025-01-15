@@ -21,7 +21,7 @@ function Time() {
             <h3>09:30 Pagi - Selesai</h3>
           </div>
           <div className="ceremony-date">
-            01.12.2025
+            01.02.2025
           </div>
           <div className="ceremony-location">
             Jl. Angkasa Dalam 1 (Di depan Pos Rw.02) Kemayoran, Jakarta Pusat
@@ -41,7 +41,7 @@ function Time() {
             <h3>12:00 Siang - Selesai</h3>
           </div>
           <div className="reception-date">
-            01.12.2025
+            01.02.2025
           </div>
           <div className="reception-location">
           Jl. Angkasa Dalam 1 (Di depan Pos Rw.02) Kemayoran, Jakarta Pusat
