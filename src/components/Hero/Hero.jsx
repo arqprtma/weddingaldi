@@ -10,17 +10,17 @@ function Hero({onShowInvitation}) {
   return (
     <div className="container">
       <div className="hero-content">
-        <h1 className="hero-title">The Wedding of</h1>
+        <h1 className="hero-title">Pernikahan</h1>
         <h2 className="hero-subtitle">Elsa Agustina & Aldi Fahrezi </h2>
         <p className="hero-description">
-          We invite you to celebrate our wedding
+        Kami mengundang anda untuk merayakan pernikahan kami
         </p>
         <div className="card">
-            <h2 className="dear">Dear Sir/Madam</h2>
+            <h2 className="dear">Kepada Bapak/Ibu</h2>
             <h1>{guestName}</h1>
-            <p>You are cordially invited to our wedding.</p>
+            <p>Mohon maaf apabila ada kesalahan nama / gelar</p>
             <button onClick={ onShowInvitation }>
-  <i className="fas fa-arrow-down" ></i> Open Invitation
+  <i className="fas fa-arrow-down" ></i> Buka Undangan
 </button>
         </div>
       </div>

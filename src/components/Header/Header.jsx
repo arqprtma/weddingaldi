@@ -19,26 +19,23 @@ function Header() {
 
       {/* Container Header */}
       <div className="container-header">
-        <h2 className="title-arab">Groom & Bride</h2>
+        <h2 className="title-arab">Tentang Kami</h2>
         <p className="header-description">
-          Without reducing respect, please allow us to invite you, as well as
-          all your relatives, to attend our wedding.
+        Tanpa mengurangi rasa hormat, perkenankanlah kami mengundang Bapak/Ibu beserta seluruh kerabat untuk hadir di pesta pernikahan kami.
         </p>
 
         {/* Partner Section */}
         <div className="partner">
           {/* Bride */}
           <div className="woman">
-            <img src="elsa.jpeg" alt="Elsa" className="partner-img" />
             <h2 className="partner-name">Elsa Agustina</h2>
-            <p className="partner-parent">The third daughter of Mr. Zubir Ilyas and Mrs. Erlinda.
+            <p className="partner-parent">Putri ke 3 dari Bapak Zubir Ilyas dan Ibu Erlinda.
             </p>
           </div>
             {/* Groom */}
             <div className="man">
-            <img src="aldi.jpeg" alt="Aldi" className="partner-img" />
             <h2 className="partner-name">Aldi Fahrezi</h2>
-            <p className="partner-parent">The first son of Mr. Kurnia and Mrs. Sri Utami.</p>
+            <p className="partner-parent">Putra ke 1 dari Bapak Kurnia Ibu Sri Utami.</p>
           </div>
         </div>
       </div>

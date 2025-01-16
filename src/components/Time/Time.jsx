@@ -4,7 +4,7 @@ import './Time.css';
 function Time() {
   return (
     <div className="container-time">
-      <h2 className="headings">Wedding Time</h2>
+      <h2 className="headings">Waktu & Tempat</h2>
       <div className="times">
         <h1 className="tanggal">01</h1>
         <div>

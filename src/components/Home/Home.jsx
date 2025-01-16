@@ -47,10 +47,10 @@ function Home() {
       <audio ref={audioRef} src={sampleSong} loop />
 
       {/* Konten Utama */}
-      <h2 className="subheading">THE WEDDING OF</h2>
+      <h2 className="subheading">Pernikahan</h2>
       <h1 className="heading">Elsa & Aldi</h1>
       <p className="description">
-        We&apos;re getting married, and we want you to be a part of our special day
+        Maha Suci Allah SWT yang telah menciptakan mahkluk-Nya berpasang-pasangan.
       </p>
     </div>
   );

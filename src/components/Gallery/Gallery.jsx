@@ -3,17 +3,17 @@ import './Gallery.css';
 
 function Gallery() {
   const images = [
-    'aldi-1.JPG',
-    'aldi-4.JPG',
-    'aldi-6.JPG',
-    'aldi-3.JPG',
-    'aldi-2.JPG',
+    'aldi-1.jpeg',
+    'aldi-4.jpeg',
+    'aldi-5.jpeg',
+    'aldi-3.jpeg',
+    'aldi-2.jpeg',
   ];
 
   return (
     <div className="gallery-container">
     <img className='divider' src="floral.png" alt="" />
-      <h2 className="gallery-heading">Our Gallery</h2>
+      <h2 className="gallery-heading">Foto Istimewa</h2>
       <div className="gallery-quote">
         <p className="arabic-text">
           وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ 

@@ -92,7 +92,7 @@ const Rsvp = () => {
   return (
     <>
       <div ref={containerRef} className="animate-slide-up">
-        <h2 className="judul-feedback">Say Something!</h2>
+        <h2 className="judul-feedback">Doakan kami</h2>
 
         <form onSubmit={handleSubmit}>
           <div>
