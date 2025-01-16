@@ -4,7 +4,18 @@ import sampleSong from '../../../public/src/songs.mp3'; // Import file lagu Anda
 
 function Home() {
   const [isPlaying, setIsPlaying] = useState(true); // Default lagu dimainkan
+  const [currentBackground, setCurrentBackground] = useState(0); // Indeks background
+  const [isTransitioning, setIsTransitioning] = useState(false); // State untuk efek transisi
   const audioRef = useRef(null); // Referensi untuk elemen audio
+
+  // Daftar background
+  const backgrounds = [
+    '../../../public/aldi-1.jpeg',
+    '../../../public/aldi-2.jpeg',
+    '../../../public/aldi-3.jpeg',
+    '../../../public/aldi-4.jpeg',
+    '../../../public/aldi-5.jpeg',
+  ];
 
   // Mengontrol pemutaran lagu saat isPlaying berubah
   useEffect(() => {
@@ -20,8 +31,28 @@ function Home() {
     setIsPlaying((prev) => !prev);
   };
 
+  // Mengganti background dengan transisi
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true); // Mulai efek transisi
+      setTimeout(() => {
+        setCurrentBackground((prev) => (prev + 1) % backgrounds.length); // Ganti gambar
+        setIsTransitioning(false); // Akhiri efek transisi
+      }, 1000); // Durasi transisi (1 detik)
+    }, 5000); // Interval perpindahan (5 detik)
+    return () => clearInterval(interval); // Bersihkan interval
+  }, [backgrounds.length]);
+
   return (
     <div className="containers">
+      {/* Lapisan transisi */}
+      <div
+        className={`transition-layer ${isTransitioning ? 'fade-out' : ''}`}
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.7) 90%), url(${backgrounds[currentBackground]})`,
+        }}
+      ></div>
+
       {/* Tombol kontrol lagu */}
       <button
         className="music-control"
@@ -41,7 +72,6 @@ function Home() {
       >
         {isPlaying ? '🔊' : '🔇'}
       </button>
-      
 
       {/* Elemen Audio */}
       <audio ref={audioRef} src={sampleSong} loop />

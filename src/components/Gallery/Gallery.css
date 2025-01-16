@@ -79,9 +79,40 @@
     width: 70px;
     margin: 0 auto;
   }
+
+  /* Keyframes untuk animasi ngembang-ngembang */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05); /* Sedikit membesar */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Styling untuk animasi pada gambar */
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    animation: pulse 3s infinite ease-in-out; /* Animasi "ngembang-ngembang" */
+  }
+  
+  /* Efek tambahan saat hover */
+  .gallery-item:hover .gallery-image {
+    transform: scale(1.1); /* Zoom lebih besar saat hover */
+    filter: brightness(80%);
+    animation: none; /* Matikan animasi "ngembang-ngembang" saat hover */
+  }
+  
   
   /* Responsiveness */
-  @media screen and (max-width: 768px) {
+/* Responsiveness */
+@media screen and (max-width: 768px) {
     .gallery-heading {
       font-size: 2rem;
     }
@@ -97,6 +128,19 @@
     .translation {
       font-size: 1rem;
     }
+  
+    /* Membuat gambar vertikal lebih kecil */
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Lebar minimum lebih kecil */
+      gap: 10px;
+    }
+  
+    .gallery-image {
+      width: 100%; /* Pastikan gambar memenuhi lebar kotak */
+      height: auto; /* Jaga proporsi gambar */
+      max-height: 250px; /* Batasi tinggi maksimal */
+      object-fit: contain; /* Pastikan gambar tetap proporsional */
+    }
   }
   
   @media screen and (max-width: 480px) {
@@ -111,5 +155,21 @@
     .translation {
       font-size: 0.9rem;
     }
+  
+    /* Membuat gambar lebih kecil pada layar yang sangat kecil */
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 8px;
+    }
+  
+    .gallery-image {
+      width: 100%; /* Pastikan gambar memenuhi lebar kotak */
+      height: auto; /* Jaga proporsi gambar */
+      max-height: 200px; /* Batasi tinggi maksimal */
+      object-fit: contain; /* Proporsional untuk gambar vertikal */
+    }
   }
+  
+  
+  
   

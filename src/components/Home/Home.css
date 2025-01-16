@@ -1,14 +1,10 @@
 /* Container utama */
 .containers {
+  position: relative; /* Posisi relatif untuk efek transisi */
+  overflow: hidden; /* Menghindari overflow */
   color: #fff; /* Warna teks putih */
   text-align: center;
   padding: 2rem;
-  background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.7) 90%), 
-    url('../../../public/aldi-1.jpeg'); /* Pastikan path relatif dimulai dengan '/' */
-  background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi area */
-  background-position: center; /* Memusatkan gambar */
-  background-repeat: no-repeat; /* Jangan ulangi gambar */
   min-height: 100vh; /* Tinggi minimum agar menutupi layar penuh */
   display: flex;
   flex-direction: column;
@@ -16,6 +12,24 @@
   align-items: center;
 }
 
+/* Lapisan transisi */
+.transition-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Menutupi area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat;
+  transition: opacity 1s ease-in-out; /* Transisi smooth */
+  opacity: 1; /* Awalnya terlihat */
+  z-index: -1; /* Di belakang konten utama */
+}
+
+.transition-layer.fade-out {
+  opacity: 0; /* Menghilang saat transisi */
+}
 
 /* Heading utama */
 .heading {
@@ -52,33 +66,33 @@
 /* Animasi slide */
 @keyframes slideUp {
   0% {
-      transform: translateY(20px);
-      opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Responsif untuk mobile */
 @media (max-width: 768px) {
   .containers {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .heading {
-      font-size: 1.5rem;
-      letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
   }
 
   .subheading {
-      font-size: 1rem;
-      letter-spacing: 0.3rem;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
   }
 
   .description {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 }

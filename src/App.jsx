@@ -8,7 +8,8 @@ import Gallery from './components/Gallery/Gallery';
 import Gift from './components/Gift/Gift';
 import Rsvp from './components/Rsvp/Rsvp';
 import Footer from './components/Footer/Footer';
-
+import Countdown from './components/Countdown/Countdown';
+import Story from './components/Story/Story';
 function App() {
   const [showInvitation, setShowInvitation] = useState(false);
 
@@ -33,7 +34,9 @@ function App() {
                 <Home />
                 <Header />
                 <Time />
+                <Countdown />
                 <Gallery />
+                <Story />
                 <Gift />
                 <Rsvp />
                 <Footer />
