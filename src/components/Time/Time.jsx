@@ -18,7 +18,7 @@ function Time() {
         <div className="ceremony-detail">
           <div className="ceremony-time">
             <h5>Waktu</h5>
-            <h3>09:30 Pagi - Selesai</h3>
+            <h3>10.00 Pagi - Selesai</h3>
           </div>
           <div className="ceremony-date">
             01.02.2025
@@ -38,7 +38,7 @@ function Time() {
         <div className="reception-detail">
           <div className="reception-time">
             <h5>Waktu</h5>
-            <h3>12:00 Siang - Selesai</h3>
+            <h3>13.00 Siang - 21.00 Malam</h3>
           </div>
           <div className="reception-date">
             01.02.2025
