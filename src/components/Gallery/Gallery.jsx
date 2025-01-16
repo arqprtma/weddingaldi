@@ -6,6 +6,7 @@ function Gallery() {
     'aldi-1.jpeg',
     'aldi-4.jpeg',
     'aldi-5.jpeg',
+    'aldi-6.jpeg',
     'aldi-3.jpeg',
     'aldi-2.jpeg',
   ];
