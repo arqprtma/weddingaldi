@@ -10,11 +10,11 @@ function Home() {
 
   // Daftar background
   const backgrounds = [
-    '../../../public/aldi-1.jpeg',
-    '../../../public/aldi-2.jpeg',
-    '../../../public/aldi-3.jpeg',
-    '../../../public/aldi-4.jpeg',
-    '../../../public/aldi-5.jpeg',
+    'aldi-1.jpeg',
+    'aldi-2.jpeg',
+    'aldi-3.jpeg',
+    'aldi-4.jpeg',
+    'aldi-5.jpeg',
   ];
 
   // Mengontrol pemutaran lagu saat isPlaying berubah
