@@ -35,6 +35,7 @@ function Gallery() {
           </div>
         ))}
       </div>
+      <img className='divider' src="floral.png" alt="" />
     </div>
   );
 }
